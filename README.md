@@ -14,6 +14,16 @@ docker run --name mysqldb \
 -e MYSQL_ROOT_PASSWORD=<ROOT-PASSWORD> \
 --rm -d mysql/mysql-server:latest
 ```
+or
+```bash
+docker run --name mysqldb \
+-v mysqldbvol:/var/lib/mysql \
+--net=host \
+-e MYSQL_ROOT_PASSWORD=<MYSQL-PASSWORD>\
+-e MYSQL_ROOT_HOST='%' \
+--rm -d mysql/mysql-server:latest
+
+```
 connect to mysql
 ```bash
 mysql -h 127.0.0.1 -u <MYSQL-USERNAME> -p
