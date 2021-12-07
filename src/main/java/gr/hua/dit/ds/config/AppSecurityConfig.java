@@ -34,10 +34,9 @@ public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests().anyRequest().authenticated().and().formLogin().loginPage("/login")
+        http.authorizeRequests().anyRequest().authenticated().and().formLogin()
                 .loginProcessingUrl("/authUser").permitAll().and().logout().permitAll().and().exceptionHandling()
                 .accessDeniedPage("/403");
-
     }
 
     @Override
