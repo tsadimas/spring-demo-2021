@@ -56,24 +56,24 @@ the project url is
 when the prompt to select the kind of project appears, select *Import as general project*
 
 
-![import_project](assets/screenshotsimport.png "Import into Eclipse")
+![import_project](assets/screenshots/import.png "Import into Eclipse")
 
 
 Next, you should convert the current project to Dynamic Web project.
 To accomplish this, you should right-click the project and in properties go to *Project Facets*
 Enable Faceted Project
 
-![enable_facets](assets/screenshotsconvert-to-facet.png "Convert to faceted form")
+![enable_facets](assets/screenshots/convert-to-facet.png "Convert to faceted form")
 
 and select _Dynamic Web Module_ from the facets list.
 
-![facets](assets/screenshotsdynamic-facet.png "Convert to Dynamic Web Project")
+![facets](assets/screenshots/dynamic-facet.png "Convert to Dynamic Web Project")
 
 Set the default JRE runtime to be Java 11. To accomplish this, right click the project and in _Java Build Path_, in Libraries Tab edit the _JRE System Library_ to point to your Java 11 runtime (setting the appropriate value to Alternate JRE).
 
-![facets](assets/screenshotsjava-1.png "JRE config 1")
+![facets](assets/screenshots/java-1.png "JRE config 1")
 
-![facets](assets/screenshotsjava-2.png "JRE config 2")
+![facets](assets/screenshots/java-2.png "JRE config 2")
 
 
 To fix the errors in jsp files, you should again right click the project, and in properties go to _Targeted Runtimes_ and select the Apache Tomcat that is connected to your eclipse workspace.
